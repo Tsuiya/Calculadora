@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>adição</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-label> Número 1: </ion-label>
+<ion-input [(ngModel)]="n1" type="number" placeholder = "Insira um número aqui..." > </ion-input><br>
+
+<ion-label> Número 2: </ion-label>
+<ion-input [(ngModel)]="n2" type="number" placeholder = "Insira um número aqui..." > </ion-input><br>
+
+<ion-button (click) = "somar()" > Somar </ion-button>
+
+<ion-card>
+  <ion-card-content>
+    <ion-list>
+      <ion-item>
+        Resultado: {{soma}}
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+<br>
+<ion-button href = "/home"> Voltar </ion-button>
+</ion-content>

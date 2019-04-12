@@ -1,14 +1,25 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <h3><b> Escolha um método para a conta: </b> </h3> <br> <br>
+  <ion-button expand="block" href = "/adicao" >Adição</ion-button> <br>
+  <ion-button expand="block" href = "/subtracao" >Subtração</ion-button> <br>
+  <ion-button expand="block" href = "/divisao" >Divisão</ion-button> <br>
+  <ion-button expand="block" href = "/multiplicacao" >Multiplicação</ion-button> <br>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button>
+        <ion-icon name="arrow-dropleft"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="start">
+        <ion-fab-button href = "https://www.github.com/Tsuiya" > <ion-icon name="logo-github" > </ion-icon> </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+
 </ion-content>
